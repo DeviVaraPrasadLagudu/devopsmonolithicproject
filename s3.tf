@@ -22,6 +22,7 @@ versioning_configuration {
 status = "Enabled"
 }
 }
+/*
 terraform {
 backend "s3" {
 region = "us-east-1"
@@ -29,3 +30,4 @@ bucket = "deepu514.monolithicbucket-tf"
 key = "prod/terraform.tfstate"
 }
 }
+*/
