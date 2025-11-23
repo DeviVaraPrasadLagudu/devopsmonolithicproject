@@ -27,7 +27,7 @@ terraform {
 backend "s3" {
 region = "us-east-1"
 bucket = "deepu514.monolithicbucket-tf"
-key = "prod/terraform.tfstate"
+key = "prod/terraform.tfstate" #statefile will be pushed to this path in bucket
 }
 }
 
