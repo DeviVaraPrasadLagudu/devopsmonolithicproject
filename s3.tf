@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "one" {
-  bucket = "deepu514.monolithicbucket"
+  bucket = "deepu514.monolithicbucket-tf"
 }
 
 resource "aws_s3_bucket_ownership_controls" "two" {
@@ -25,7 +25,7 @@ status = "Enabled"
 terraform {
 backend "s3" {
 region = "us-east-1"
-bucket = "deepu514.monolithic-tf"
+bucket = "deepu514.monolithicbucket-tf"
 key = "prod/terraform.tfstate"
 }
 }
